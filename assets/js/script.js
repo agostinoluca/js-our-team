@@ -39,8 +39,15 @@ Barbara Ramos	Graphic Designer	barbara-ramos-graphic-designer.jpg
 */
 
 // creo una array di oggetti con membri del team e le relative informazioni
+let team = {
+    name: 'Wayne',
+    lastname: 'Barnett',
+    employment: 'Founder & CEO',
+    photo: 'wayne-barnett-founder-ceo.jpg',
+}
 
 // stampo in console le informazioni di ogni membro del team
+console.log(team);
 
 // aggiungo in una costante il mio div del HTML
 
