@@ -105,7 +105,6 @@ for (let i = 0; i < team.length; i++) {
             <div class="card-body d-flex flex-column justify-content-end">
                 <h5 class="card-title">${member.name} ${member.lastname}</h5>
                 <p class="card-text">${member.employment}</p>
-                <a href="#" class="btn btn-primary">Linkedin</a>
             </div>
         </div>
     `
