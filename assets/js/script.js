@@ -33,7 +33,20 @@ Barbara Ramos	Graphic Designer	barbara-ramos-graphic-designer.jpg
  -innerText / innerHtml;
  -getElementById;
  -for;
+ -console.log
 
 
 */
+
+// creo una array di oggetti con membri del team e le relative informazioni
+
+// stampo in console le informazioni di ogni membro del team
+
+// aggiungo in una costante il mio div del HTML
+
+// stampo le informazioni su DOM sottoforma di stringhe
+
+// trasformo la stringa in immagine
+
+// creo una card organizzata per inserire le informazioni
 
