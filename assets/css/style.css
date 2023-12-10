@@ -3,3 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.team_card {
+    width: calc((100% / 3) - 1rem);
+    margin: 0.5rem;
+    text-align: center;
+}

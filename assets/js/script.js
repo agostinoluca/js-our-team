@@ -79,19 +79,39 @@ let team = [
     ]
 
 // stampo in console le informazioni di ogni membro del team
-console.log(team);
+/* console.log(team);
 
 for (let i = 0; i < team.length; i++) {
     console.log(team[i].name);
     console.log(team[i].lastname);
     console.log(team[i].employment);
     console.log(team[i].photo);
-}
+    console.log(member);
+} */
 
 
 // aggiungo in una costante il mio div del HTML
+const containerEl = document.getElementById('row');
 
 // stampo le informazioni su DOM sottoforma di stringhe
+for (let i = 0; i < team.length; i++) {
+    const member = team[i];
+
+    const postMarkup = 
+    `
+        <div class="card team_card";">
+            <img src="..."" alt="${member.photo}">
+            <div class="card-body d-flex flex-column justify-content-end">
+                <h5 class="card-title">${member.name} ${member.lastname}</h5>
+                <p class="card-text">${member.employment}</p>
+                <a href="#" class="btn btn-primary">Linkedin</a>
+            </div>
+        </div>
+    `
+
+    containerEl.insertAdjacentHTML('beforeend', postMarkup);
+}
+
 
 // trasformo la stringa in immagine
 
