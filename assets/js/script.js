@@ -81,6 +81,14 @@ let team = [
 // stampo in console le informazioni di ogni membro del team
 console.log(team);
 
+for (let i = 0; i < team.length; i++) {
+    console.log(team[i].name);
+    console.log(team[i].lastname);
+    console.log(team[i].employment);
+    console.log(team[i].photo);
+}
+
+
 // aggiungo in una costante il mio div del HTML
 
 // stampo le informazioni su DOM sottoforma di stringhe
