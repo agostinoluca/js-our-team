@@ -39,12 +39,44 @@ Barbara Ramos	Graphic Designer	barbara-ramos-graphic-designer.jpg
 */
 
 // creo una array di oggetti con membri del team e le relative informazioni
-let team = {
-    name: 'Wayne',
-    lastname: 'Barnett',
-    employment: 'Founder & CEO',
-    photo: 'wayne-barnett-founder-ceo.jpg',
-}
+let team = [
+    {
+        name: 'Wayne',
+        lastname: 'Barnett',
+        employment: 'Founder & CEO',
+        photo: 'wayne-barnett-founder-ceo.jpg'
+    },
+    {
+        name: 'Angela',
+        lastname: 'Caroll',
+        employment: 'Chief Editor',
+        photo: 'angela-caroll-chief-editor.jpg'
+    },
+    {
+        name: 'Walter',
+        lastname: 'Gordon',
+        employment: 'Office Manager',
+        photo: 'walter-gordon-office-manager.jpg'
+    },
+    {
+        name: 'Angela',
+        lastname: 'Lopez',
+        employment: 'Social Media Manager',
+        photo: 'angela-lopez-social-media-manager.jpg'
+    },
+    {
+        name: 'Scott',
+        lastname: 'Estrada',
+        employment: 'Developer',
+        photo: 'scott-estrada-developer.jpg'
+    },
+    {
+        name: 'Barbara',
+        lastname: 'Ramos',
+        employment: 'Graphic Designer',
+        photo: 'barbara-ramos-graphic-designer.jpg'
+    }
+    ]
 
 // stampo in console le informazioni di ogni membro del team
 console.log(team);
