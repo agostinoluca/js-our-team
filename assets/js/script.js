@@ -97,10 +97,11 @@ const containerEl = document.getElementById('row');
 for (let i = 0; i < team.length; i++) {
     const member = team[i];
 
+    // creo una card organizzata per inserire le informazioni
     const postMarkup = 
     `
         <div class="card team_card";">
-            <img src="..."" alt="${member.photo}">
+            <img src="./assets/img/${member.lastname}.jpg"" alt="${member.photo}">
             <div class="card-body d-flex flex-column justify-content-end">
                 <h5 class="card-title">${member.name} ${member.lastname}</h5>
                 <p class="card-text">${member.employment}</p>
@@ -111,9 +112,4 @@ for (let i = 0; i < team.length; i++) {
 
     containerEl.insertAdjacentHTML('beforeend', postMarkup);
 }
-
-
-// trasformo la stringa in immagine
-
-// creo una card organizzata per inserire le informazioni
 
