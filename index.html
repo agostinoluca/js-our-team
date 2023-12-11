@@ -19,31 +19,35 @@
         <h1 class="text-center">OUR TEAM®</h1>
         <div id="row" class="row py-5 justify-content-center row-cols-1 row-cols-md-3">
         </div>
+        <!-- /.row -->
     </div>
+    <!-- /.container -->
 
     <div class="d-flex justify-content-center pb-5 ">
         <form id="addMember" class="w-25">
             <div class="mb-3">
               <label for="nameMember" class="form-label">Name</label>
-              <input type="text" class="form-control" id="nameMember" aria-describedby="nameHelp">
+              <input type="text" class="form-control" id="nameMember" aria-describedby="nameHelp" required>
               <div id="nameHelp" class="form-text">Qualunque nome andrà bene</div>
             </div>
             
             <div class="mb-3">
               <label for="lastNameMember" class="form-label">Lastname</label>
-              <input type="text" class="form-control" id="lastNameMember" aria-describedby="lastNameHelp">
+              <input type="text" class="form-control" id="lastNameMember" aria-describedby="lastNameHelp" required>
               <div id="LastNameHelp" class="form-text">Foto disponibili solo per cooper e nelson</div>
             </div>
 
             <div class="mb-3">
                 <label for="employmentMember" class="form-label">Employment</label>
-                <input type="text" class="form-control" id="employmentMember" aria-describedby="employmentHelp">
+                <input type="text" class="form-control" id="employmentMember" aria-describedby="employmentHelp" required>
                 <div id="employmentHelp" class="form-text">Quale sarà la tua mansione?</div>
             </div>
 
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+            <button type="submit" class="btn btn-primary w-100">Submit</button>
+        </form>
+        <!-- /#addMember -->
     </div>
+    <!-- /container form for add new member -->
     
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"

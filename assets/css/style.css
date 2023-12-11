@@ -13,16 +13,33 @@ h1 {
     font-size: 3rem;
 }
 
+h1:hover {
+    transform: scale(1.5);
+}
+
 .team_card {
     width: calc((100% / 3) - 1rem);
     margin: 0.5rem;
     text-align: center;
     padding: 0.5rem;
     box-shadow: 0.5rem 0.5rem 0.25rem rgba(0, 0, 0, 0.308);
+    background-color: rgb(150, 176, 224);
+    color: white;
+}
+
+.team_card h3 {
+    text-shadow: 0.15rem 0.15rem 0.15rem black;
+
 }
 
 .team_card img {
+    min-height: 60%;
     height: 60%;
     border-radius: 1rem;
     filter: grayscale(1);
+}
+
+.team_card img:hover {
+    transform: scale(1.02);
+    box-shadow: 0rem 0.5rem 0.25rem rgba(0, 0, 0, 0.308);
 }

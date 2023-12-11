@@ -143,9 +143,9 @@ function createCard(prospect, parent){
         `
             <div class="card team_card";">
                 <img src="./assets/img/${prospect.lastname}.jpg"" alt="${prospect.photo}">
-                <div class="card-body d-flex flex-column justify-content-end">
-                    <h5 class="card-title">${prospect.name} ${prospect.lastname}</h5>
-                    <p class="card-text">${prospect.employment}</p>
+                <div class="card-body d-flex flex-column justify-content-center">
+                    <h3 class="card-title">${prospect.name} ${prospect.lastname}</h5>
+                    <p class="card-text text-secondary ">${prospect.employment}</p>
                 </div>
             </div>
         `
