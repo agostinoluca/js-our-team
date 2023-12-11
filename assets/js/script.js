@@ -34,7 +34,11 @@ Barbara Ramos	Graphic Designer	barbara-ramos-graphic-designer.jpg
  -getElementById;
  -for;
  -console.log
-
+ -function
+ -addEventListener(e)
+ -.preventDefault()
+ -.push
+ -.insertAdiacentHtml
 
 */
 
@@ -97,18 +101,55 @@ const containerEl = document.getElementById('row');
 for (let i = 0; i < team.length; i++) {
     const member = team[i];
 
-    // creo una card organizzata per inserire le informazioni
-    const postMarkup = 
-    `
-        <div class="card team_card";">
-            <img src="./assets/img/${member.lastname}.jpg"" alt="${member.photo}">
-            <div class="card-body d-flex flex-column justify-content-end">
-                <h5 class="card-title">${member.name} ${member.lastname}</h5>
-                <p class="card-text">${member.employment}</p>
-            </div>
-        </div>
-    `
-
-    containerEl.insertAdjacentHTML('beforeend', postMarkup);
+    // utilizzo una funzione per creare il markup della card
+    createCard(member, containerEl);
 }
 
+// richiamo tramite id il mio form per l'inserimento di nuovi membri
+const addMember = document.getElementById('addMember');
+
+// aggiungo un evento al submit del form
+addMember.addEventListener('submit', function(e){
+    // previene l'aggiornamento della pagina
+    e.preventDefault();
+
+    // pesco i dati dalle value del form e l'inserisco in una costante
+    const newMember = {
+        name: document.getElementById('nameMember').value,
+        lastname: document.getElementById('lastNameMember').value,
+        employment: document.getElementById('employmentMember').value,
+        photo: document.getElementById('lastNameMember').value
+    }
+
+    // inserisco nella array il nuovo oggetto
+    team.push(newMember);
+
+    // creo la nuova card richiamando la funzione
+    createCard(newMember, containerEl);
+
+    // dopo il click cancello gli input dei value
+    document.getElementById('nameMember').value = "";
+    document.getElementById('lastNameMember').value = "";
+    document.getElementById('employmentMember').value = "";
+    document.getElementById('photoMember').value = "";
+});
+
+
+// funzione per la creazione del markup delle card dei membri
+function createCard(prospect, parent){
+
+        // creo una card organizzata per inserire le informazioni
+        const postMarkup = 
+        `
+            <div class="card team_card";">
+                <img src="./assets/img/${prospect.lastname}.jpg"" alt="${prospect.photo}">
+                <div class="card-body d-flex flex-column justify-content-end">
+                    <h5 class="card-title">${prospect.name} ${prospect.lastname}</h5>
+                    <p class="card-text">${prospect.employment}</p>
+                </div>
+            </div>
+        `
+
+        // inserisco l'html appena scritto (prima del tag di chiusura) 
+        parent.insertAdjacentHTML('beforeend', postMarkup);
+};
